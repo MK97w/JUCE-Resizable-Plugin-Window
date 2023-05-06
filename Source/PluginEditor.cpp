@@ -17,7 +17,7 @@ NewProjectAudioProcessorEditor::NewProjectAudioProcessorEditor (NewProjectAudioP
     // editor's size to whatever you need it to be.
     newButton.addListener(this);
     addAndMakeVisible(newButton);
-    setSize (400, 300);
+    setSize (700, 500);
 }
 
 NewProjectAudioProcessorEditor::~NewProjectAudioProcessorEditor()
@@ -48,15 +48,15 @@ void NewProjectAudioProcessorEditor::buttonClicked(juce::Button*)
     increaseClickCount();
     if(int x = getClickCount(); x%3 == 1 )
     {
-        setSize(800, 600);
+        setSize(1003, 763);
     }
     else if (x%3 == 2)
     {
-        setSize(1200, 900);
+        setSize(1255, 948);
     }
     else
     {
-        setSize(400, 300);
+        setSize (700, 500);
     }
         
 }
